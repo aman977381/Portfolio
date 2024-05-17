@@ -30,7 +30,7 @@ footer:after{
 }
 """
 
-img = "Portfolio\assets\prof_img1.jpg"
+img = "assets\prof_img1.jpg"
 img_horus  = "Portfolio\assets\horus.png"
 img_clg = "Portfolio\assets\clg.jpg"
 img_dip = "Portfolio\assets\crrit.jpeg"
