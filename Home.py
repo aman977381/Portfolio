@@ -29,7 +29,7 @@ footer:after{
     color:black;
 }
 """
-
+resume_img = "assets/Resume.png"
 img = "assets/prof_img1.jpg"
 img_horus  = "assets/horus.png"
 img_clg = "assets/clg.jpg"
@@ -129,7 +129,7 @@ if choose == "About Me":
         with middle_column:
             st.empty()
         with right_column:
-            st.image(img)
+            st.image(resume_img)
 
 elif choose == "Experience":
     #st.write("---")
