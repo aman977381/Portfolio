@@ -19,6 +19,8 @@ with open(css_file) as f:
     st.markdown("<style>{}</style>".format(f.read()), unsafe_allow_html=True)
 
 
+
+
 footer = """
 footer{
     visibility:visible;
@@ -42,7 +44,11 @@ img_sand = "assets/sandrover.jpeg"
 img_sand1 = "assets/sand.jpg"
 img_airflicks = "assets/airflicks.jpg"
 img_gdsc = "assets/gdsc.png"
+resume = "assets/Resume_ML.pdf"
 
+
+with open(resume, "rb") as pdf_file:
+    PDFbyte = pdf_file.read()
 
 st.markdown("""
   <style>
@@ -130,6 +136,11 @@ if choose == "About Me":
             st.empty()
         with right_column:
             st.image(resume_img)
+            st.download_button(
+                label="Download Resume",
+                data=PDFbyte,
+                file_name="Aman Resume.pdf"
+            )
 
 elif choose == "Experience":
     #st.write("---")
