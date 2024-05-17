@@ -30,18 +30,18 @@ footer:after{
 }
 """
 
-img = Image.open("assets\prof_img1.jpg")
-img_horus  = Image.open("assets\horus.png")
-img_clg = Image.open("assets\clg.jpg")
-img_dip = Image.open("assets\crrit.jpeg")
-img_plant_pro = Image.open("assets\img_plant.jpeg")
-img_waste_pro = Image.open("assets\img_waste.png")
-img_eda = Image.open("assets\img_EDA.jpg")
-img_deep = Image.open("assets\deepracer.jpeg")
-img_sand = Image.open("assets\sandrover.jpeg")
-img_sand1 = Image.open("assets\sand.jpg")
-img_airflicks = Image.open(r"assets\airflicks.jpg")
-img_gdsc = Image.open("assets\gdsc.png")
+img = Image.open("Portfolio\assets\prof_img1.jpg")
+img_horus  = Image.open("Portfolio\assets\horus.png")
+img_clg = Image.open("Portfolio\assets\clg.jpg")
+img_dip = Image.open("Portfolio\assets\crrit.jpeg")
+img_plant_pro = Image.open("Portfolio\assets\img_plant.jpeg")
+img_waste_pro = Image.open("Portfolio\assets\img_waste.png")
+img_eda = Image.open("Portfolio\assets\img_EDA.jpg")
+img_deep = Image.open("Portfolio\assets\deepracer.jpeg")
+img_sand = Image.open("Portfolio\assets\sandrover.jpeg")
+img_sand1 = Image.open("Portfolio\assets\sand.jpg")
+img_airflicks = Image.open(r"Portfolio\assets\airflicks.jpg")
+img_gdsc = Image.open("Portfolio\assets\gdsc.png")
 
 
 st.markdown("""
