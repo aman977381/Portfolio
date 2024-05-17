@@ -30,7 +30,7 @@ footer:after{
 }
 """
 
-img = Image.open("Portfolio\assets\prof_img1.jpg")
+img = Image.open(r"Portfolio\assets\prof_img1.jpg")
 img_horus  = Image.open("Portfolio\assets\horus.png")
 img_clg = Image.open("Portfolio\assets\clg.jpg")
 img_dip = Image.open("Portfolio\assets\crrit.jpeg")
