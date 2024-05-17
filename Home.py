@@ -6,7 +6,7 @@ from PIL import Image
 from utils import social_icons
 import sqlite3
 
-st.set_page_config(page_title="My Portfolio", 
+st.set_page_config(page_title="Aman Singh", 
                    page_icon="📚",
                    layout = "wide", 
                    initial_sidebar_state = "auto")
@@ -30,7 +30,7 @@ footer:after{
 }
 """
 
-img = Image.open("assets\Aman Photo.jpeg")
+img = Image.open("assets\prof_img1.jpg")
 img_horus  = Image.open("assets\horus.png")
 img_clg = Image.open("assets\clg.jpg")
 img_dip = Image.open("assets\crrit.jpeg")
@@ -43,6 +43,28 @@ img_sand1 = Image.open("assets\sand.jpg")
 img_airflicks = Image.open(r"assets\airflicks.jpg")
 img_gdsc = Image.open("assets\gdsc.png")
 
+
+st.markdown("""
+  <style>
+
+    /*the main div*/
+    .css-1v0mbdj {
+        width: 200px; /*max value according to image width, can be smaller but not larger*/
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+    /*the img elements in the main div class*/
+    .css-1v0mbdj > img{
+        display: inline;
+        margin: 0 auto;
+        margin-top: -35%; /*Tweak this one according to your need*/
+    }
+  
+  </style>
+""", unsafe_allow_html=True)
 
 def text1(a, b):
   col1, col2 = st.columns([1,4])
@@ -66,8 +88,8 @@ with st.sidebar:
     
     choose = option_menu(
                         "Aman Singh", 
-                        ["About Me","Experience", "Technical Skills", "Education", "Projects", "Competitions", "Extra Curricular", "Contact"],
-                         icons=['person fill', 'clock history', 'tools', 'book half', 'clipboard', 'trophy fill', 'heart', 'envelope'],
+                        ["About Me", "Technical Skills", "Education", "Projects", "Experience","Competitions", "Extra Curricular", "Contact"],
+                         icons=['person fill', 'tools', 'book half', 'clipboard', 'clock history', 'trophy fill', 'heart', 'envelope'],
                          menu_icon="mortarboard", 
                          default_index=0,
                          
@@ -98,7 +120,7 @@ if choose == "About Me":
         with left_column:
             st.header("About Me")
             st.subheader("Passionate Data Science/ML Engineer")
-            st.write("👋🏻 Hi, I'm Aman! I am Aman Singh, I'm a passionate ML engineer currently contributing to open source projects to gain more knowledge and engage within the community. 🚀, I am constantly seeking unique working experience to broaden my horizons in the realm of Ai")
+            st.write("👋🏻 Hi, I am Aman!, I'm a passionate ML engineer currently contributing to open source projects to gain more knowledge and engage within the community. 🚀, I am constantly seeking unique working experience to broaden my horizons in the realm of Ai")
             st.write("💼 I thrive on problem-solving and innovative thinking, driven by purpose and the challenge of finding solutions. With expertise in Python, Pandas, Numpy, Sklearn, Tensorflow, OpenCV, and more. Passionate about building scalable products from scratch to make a positive impact through technology. I am thus aiming to enter this industry for my first full-time job.")
             st.write("🏋🏻 In addition, I like to go for Cycling 🚴, Walk, play video games and... enjoy eating good food in my free time!")
             st.write("👨🏼‍💻 Academic interests: Data Visualization, Computer Vision, Recommendation Systems, Natural Language Processing")
@@ -117,7 +139,7 @@ elif choose == "Experience":
         with image_column:
             st.image(img_horus)
         with text_column:
-            st.subheader("UAV System Engineer")
+            st.subheader("UAV System Engineer, [Horus Innovations](https://www.linkedin.com/in/horus-innovations-708262246/?originalSubdomain=in)")
             st.write("*August to November 2023*")
             st.markdown("""
             - Successfull integretion and tuning of new electronics, sensors, payloads and new software into UAV systems, ensuring compatibility, reliability and optimal performance
@@ -182,14 +204,15 @@ elif choose == "Projects":
     with st.container():
         text_column, image_column = st.columns((3,1))
         with text_column:
-            st.subheader("Plant Disease Detection 🌱")
+            st.subheader("Plant Disease Recoginition 🌱")
             st.write("*self initiated project*")
             st.markdown("""
             - Used dataset of +17000 images belonging to 38 classes
-            - Used state of the art ImageNet CNN model to train and achieved accuracy of more than 65%
-            - Model version control using Weight&Biases
+            - Used state of the art ResNet CNN model to train and achieved accuracy of more than 65%
+            - For the model version control used Weight&Biases
             - Built webapp based on Streamlit and deployed on Streamlit cloud
             """)
+            mention(label="Streamlit App", icon="streamlit", url="https://plant-disease-recoginition.streamlit.app/",)
             mention(label="Github Repo", icon="github", url="https://github.com/aman977381/Plant-Disease-Detection.git",)
         with image_column:
             st.image(img_plant_pro)
@@ -201,10 +224,10 @@ elif choose == "Projects":
             st.write("*Self-initiated project*")
             st.markdown("""
             - Trained model on anoted dataset more than 10000 images belongs to 6 different classes
-            - Traied YOLOv8 model for waste ditection and achieved acccuracy of 58% 
+            - Traied YOLOv8 model for waste ditection and achieved acccuracy of about 58% and model performance tracked using Weight&Biases
             - Build a webapp based on Streamlit for waste detection in Image and Live video and deployed on Streamlit Cloud
             """)
-            #mention(label="Streamlit App", icon="streamlit", url="https://huggingface.co/spaces/harrychangjr/tiktok_analytics",)
+            mention(label="Streamlit App", icon="streamlit", url="https://waste-detector.streamlit.app/",)
             mention(label="Github Repo", icon="github", url="https://github.com/aman977381/Waste-Detection-using-YOLO.git",)
         with image_column:
             st.image(img_waste_pro)
@@ -220,7 +243,6 @@ elif choose == "Projects":
             - Managed data integrity by handling missing value and encding categorical variables, enhancing quality by 33%
             - Identified and comprehended key factor influencing academic performance through thorough analysis
             """)
-            #mention(label="Streamlit App", icon="streamlit", url="https://huggingface.co/spaces/harrychangjr/tiktok_analytics",)
             mention(label="Github Repo", icon="github", url="https://github.com/aman977381/ML_Project.git",)
 
     with st.container():

@@ -1,0 +1,9 @@
+Pillow
+streamlit
+streamlit-lottie
+streamlit-option-menu
+streamlit-on-Hover-tabs
+requests
+streamlit-analytics
+streamlit-extras
+beautifulsoup4
