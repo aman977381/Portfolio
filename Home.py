@@ -31,17 +31,17 @@ footer:after{
 """
 
 img = "Portfolio\assets\prof_img1.jpg"
-img_horus  = Image.open("Portfolio\assets\horus.png")
-img_clg = Image.open("Portfolio\assets\clg.jpg")
-img_dip = Image.open("Portfolio\assets\crrit.jpeg")
-img_plant_pro = Image.open("Portfolio\assets\img_plant.jpeg")
-img_waste_pro = Image.open("Portfolio\assets\img_waste.png")
-img_eda = Image.open("Portfolio\assets\img_EDA.jpg")
-img_deep = Image.open("Portfolio\assets\deepracer.jpeg")
-img_sand = Image.open("Portfolio\assets\sandrover.jpeg")
-img_sand1 = Image.open("Portfolio\assets\sand.jpg")
-img_airflicks = Image.open(r"Portfolio\assets\airflicks.jpg")
-img_gdsc = Image.open("Portfolio\assets\gdsc.png")
+img_horus  = "Portfolio\assets\horus.png"
+img_clg = "Portfolio\assets\clg.jpg"
+img_dip = "Portfolio\assets\crrit.jpeg"
+img_plant_pro = "Portfolio\assets\img_plant.jpeg"
+img_waste_pro = "Portfolio\assets\img_waste.png"
+img_eda = "Portfolio\assets\img_EDA.jpg"
+img_deep = "Portfolio\assets\deepracer.jpeg"
+img_sand = "Portfolio\assets\sandrover.jpeg"
+img_sand1 = "Portfolio\assets\sand.jpg"
+img_airflicks = "Portfolio\assets\airflicks.jpg"
+img_gdsc = "Portfolio\assets\gdsc.png"
 
 
 st.markdown("""
