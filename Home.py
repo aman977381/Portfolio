@@ -31,9 +31,9 @@ footer:after{
 """
 
 img = "assets/prof_img1.jpg"
-img_horus  = "assets\horus.png"
-img_clg = "assets\clg.jpg"
-img_dip = "assets\crrit.jpeg"
+img_horus  = "assets/horus.png"
+img_clg = "assets/clg.jpg"
+img_dip = "assets/crrit.jpeg"
 img_plant_pro = "assets/img_plant.jpeg"
 img_waste_pro = "assets/img_waste.png"
 img_eda = "assets/img_EDA.jpg"
